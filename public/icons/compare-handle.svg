@@ -1,0 +1,8 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="95" height="95" viewBox="0 0 95 95" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Button">
+<rect x="3" y="3" width="89" height="89" rx="44.5" fill="#26AE5D"/>
+<rect x="3" y="3" width="89" height="89" rx="44.5" stroke="white" stroke-width="6"/>
+<path id="Arrow" d="M35 35L22.5 47.5L35 60" stroke-width="6" stroke-linecap="round" stroke="white"/>
+<path id="Arrow_2" d="M60 35L72.5 47.5L60 60" stroke-width="6" stroke-linecap="round" stroke="white"/>
+</g>
+</svg>

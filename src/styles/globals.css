@@ -1,0 +1,64 @@
+@import "tailwindcss";
+@config "../../tailwind.config.ts";
+
+/* Raw design tokens (Figma variables). Utilities are mapped in tailwind.config.ts. */
+:root {
+  --tx-brand-orange: #e87524;
+  --tx-brand-deep: #d96a1b;
+  --tx-brand-accent: #f07f31;
+  --tx-brand-ember: #c46a2b;
+  --tx-brand-rust: #be5f1d;
+  --tx-brand-umber: #a85214;
+  --tx-brand-peach: #f0b68d;
+  --tx-brand-blush: #f1d0b9;
+  --tx-brand-edge: #361701;
+
+  --tx-ink-primary: #1a1a1a;
+  --tx-ink-secondary: #57585b;
+  --tx-ink-heading: #191b1a;
+  --tx-ink-strong: #18181b;
+  --tx-ink-inverse: #ffffff;
+  --tx-ink-mock: #0b0b22;
+
+  --tx-surface: #ffffff;
+  --tx-surface-neutral: #e8ece9;
+  --tx-surface-lavender: #e8ecf5;
+  --tx-surface-snow: #f5f5f5;
+  --tx-surface-cream: #fef8eb;
+
+  --tx-line: #d8d2c8;
+  --tx-line-soft: #edecfa;
+  --tx-line-dot: #cbd0dc;
+  --tx-line-mist: #f9f9f9;
+
+  --tx-success: #26ae5d;
+  --tx-amber: #f59e0b;
+  --tx-third: #5b3379;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
+  body {
+    overflow-x: clip;
+    background-color: var(--tx-surface);
+    color: var(--tx-ink-primary);
+    font-family: var(--font-kufi), Tahoma, sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Offset in-page anchor targets so they never hide behind the header edge. */
+  [id] {
+    scroll-margin-top: 24px;
+  }
+}
